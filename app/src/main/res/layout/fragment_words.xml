@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fragment.UnselectedWordsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ExpandableListView
+        android:id="@+id/word_expandable_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@null"
+        android:divider="@null"
+        android:groupIndicator="@null"
+        android:childIndicator="@null"
+        ></ExpandableListView>
+
+</FrameLayout>

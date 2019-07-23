@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/add_to_review_btn">
+
+    <Button
+        android:id="@+id/go_book_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <ImageView
+        android:id="@+id/fragment_review_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/book"/>
+
+    <TextView
+        android:id="@+id/fragment_review_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/fragment_review_1"
+        android:paddingTop="15dp"
+        android:text="    欢 迎 你！"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="点击添加新单词\n到你的学习列表"
+        android:layout_below="@id/fragment_review_2"
+        android:paddingTop="60dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="墨墨比你更懂你的记忆"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="15sp"/>
+</RelativeLayout>

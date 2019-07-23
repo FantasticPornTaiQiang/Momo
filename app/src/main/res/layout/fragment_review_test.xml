@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="#20B2AA">
+
+        <TextView
+            android:id="@+id/word_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="pencil"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:paddingTop="5dp"
+            android:textStyle="bold" />
+
+        <LinearLayout android:id="@+id/ps_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/word_voice_text_view"
+                tools:text="nmsl"
+                android:textSize="18sp"
+                android:paddingBottom="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/word_voice_image_button"
+                android:layout_marginLeft="10dp"
+                android:layout_width="17dp"
+                android:layout_height="14dp"
+                android:background="@drawable/sound_off_night"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/back_word_btn"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/navigation_previous_item" />
+
+    <Button
+        android:id="@+id/go_word_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="#00000000"
+        style="?android:attr/borderlessButtonStyle"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="请把英文发音和中文解释说出口\n点击屏幕显示答案"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <!-->0<-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#20B2AA"
+        android:paddingBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/back_word_btn"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/navigation_previous_item" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="pencil"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:paddingTop="8dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <!-->1<-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D3D3D3"/>
+    <!-->2<-->
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/dotted_line"
+        android:layerType="software"></View>
+    <!-->5<-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/selbook_title"
+        android:text="例句分享"
+        android:textSize="18sp"
+        android:paddingLeft="13dp"/>
+
+    <ScrollView
+        android:layout_height="310dp"
+        android:layout_width="match_parent"
+
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/orig_scrollview">
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_weight="1000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/know_word_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_above="@id/text"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:text="认识"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:background="@drawable/round_btn_1" />
+
+        <TextView
+            android:id="@+id/maybe_know_word_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_above="@id/text"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:text="不确定"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:paddingLeft="31dp"
+            android:paddingRight="31dp"
+            android:background="@drawable/round_btn_2" />
+
+        <TextView
+            android:id="@+id/no_know_word_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_above="@id/text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFFFFF"
+            android:text="不认识"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:paddingLeft="31dp"
+            android:paddingRight="31dp"
+            android:background="@drawable/round_btn_3" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

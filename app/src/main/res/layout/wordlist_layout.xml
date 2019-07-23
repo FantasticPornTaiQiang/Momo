@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <ImageButton
+            android:id="@+id/back_to_book_list_btn"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/navigation_previous_item" />
+
+        <TextView
+            android:id="@+id/book_title_text_view"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            tools:text="nmsl"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#20B2AA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D3D3D3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/unsel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+
+                android:button="@null"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/sel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:button="@null"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/all_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+
+                android:button="@null"
+                android:gravity="center" />
+
+        </RadioGroup>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="gkd"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/sel_view_pager"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100">
+    </androidx.viewpager.widget.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D3D3D3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="墨墨比你更懂你的记忆"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#20B2AA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="match_parent"
+            android:background="#A8A8A8"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+            <Button
+                android:id="@+id/confirm_words"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/confirm"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确定"
+                    android:layout_gravity="center"
+                    android:textColor="#20B2AA"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

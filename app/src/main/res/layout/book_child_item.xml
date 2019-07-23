@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/expand_child"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        tools:text="测试数据"/>
+
+    <TextView
+        android:id="@+id/selected_in_all_per_book"
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="16sp"
+        tools:text="100/500"/>
+
+</LinearLayout>
+
+
+
+
+

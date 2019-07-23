@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-->0<-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <ImageButton
+            android:id="@+id/back_to_word_list_btn"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/navigation_previous_item"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/title_container"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-->1<-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D3D3D3"/>
+    <!-->2<-->
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/dotted_line"
+        android:layerType="software"></View>
+    <!-->5<-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/selbook_title"
+        android:text="例句分享"
+        android:textSize="18sp"
+        android:paddingLeft="13dp"/>
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/orig_scrollview">
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:paddingLeft="13dp"/>
+
+
+
+</LinearLayout>

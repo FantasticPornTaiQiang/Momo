@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBDBDB"
+    tools:context="com.example.fragment.AddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:text="Books"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/round_shape"
+            android:text="全部单词"
+            android:textColor="#000000"
+            android:textSize="17sp"/>
+
+        <ExpandableListView
+            android:id="@+id/expend_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="-10dp"
+            android:groupIndicator="@null"
+            android:background="@drawable/round_shape"
+            ></ExpandableListView>
+
+    </LinearLayout>
+</FrameLayout>
