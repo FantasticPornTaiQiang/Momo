@@ -1,2 +1,2 @@
 # Momo
-An simple android app for remembering words
+A simple android app for remembering words
